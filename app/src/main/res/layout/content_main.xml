@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -9,10 +9,12 @@
     android:theme="@android:style/Theme.Light"
     android:background="@color/darkpurple"
     tools:showIn="@layout/app_bar_main">
-
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
     <TextView
         android:id="@+id/recentlabel"
-        android:layout_width="352dp"
+        android:layout_width="match_parent"
         android:layout_height="36dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
@@ -169,4 +171,623 @@
 
     </HorizontalScrollView>
 
+    <TextView
+        android:id="@+id/movie"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_below="@+id/horizontal_scroll"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="sans-serif-condensed"
+        android:paddingLeft="2dp"
+        android:text="Movies"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:textSize="30sp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <HorizontalScrollView
+        android:id="@+id/horizontal_scroll2"
+        android:layout_width="match_parent"
+        android:layout_height="139dp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_below="@+id/movie"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:id="@+id/linear2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView03"
+                android:layout_width="170dp"
+                android:layout_height="match_parent"
+                android:paddingEnd="6dp"
+                android:paddingRight="0dp"
+                app:srcCompat="@drawable/madlamzlogo" />
+
+            <Button
+                android:id="@+id/button03"
+                style="@style/Widget.AppCompat.Button.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/imageView03"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignRight="@+id/imageView03"
+                android:layout_marginRight="2dp"
+                android:background="@color/colorPrimary"
+                android:fontFamily="sans-serif-condensed"
+                android:paddingRight="6dp"
+                android:text="Movie 1"
+                android:textColor="@android:color/white"
+                android:textSize="24sp" />
+
+            <ImageView
+                android:id="@+id/imageView05"
+                android:layout_width="170dp"
+                android:layout_height="match_parent"
+                android:paddingEnd="6dp"
+                android:paddingRight="0dp"
+                app:srcCompat="@drawable/madlamzlogo"
+                android:layout_toRightOf="@+id/imageView03"
+                android:layout_toEndOf="@+id/imageView03" />
+
+
+            <Button
+                android:id="@+id/button04"
+                style="@style/Widget.AppCompat.Button.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/imageView05"
+                android:layout_alignParentBottom="true"
+                android:layout_alignRight="@+id/imageView05"
+
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_toEndOf="@+id/imageView03"
+                android:layout_toRightOf="@+id/imageView03"
+                android:background="@color/colorPrimary"
+                android:fontFamily="sans-serif-condensed"
+                android:paddingRight="6dp"
+                android:text="Movie 2"
+                android:textColor="@android:color/white"
+                android:textSize="24sp" />
+
+            <ImageView
+                android:id="@+id/imageView06"
+                android:layout_width="170dp"
+                android:layout_height="match_parent"
+                android:paddingEnd="6dp"
+                android:paddingRight="0dp"
+                app:srcCompat="@drawable/madlamzlogo"
+                android:layout_toRightOf="@+id/imageView05"
+                android:layout_toEndOf="@+id/imageView05"/>
+
+
+            <Button
+                android:id="@+id/button05"
+                style="@style/Widget.AppCompat.Button.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/imageView06"
+                android:layout_alignParentBottom="true"
+                android:layout_alignRight="@+id/imageView06"
+
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_toEndOf="@+id/imageView05"
+                android:layout_toRightOf="@+id/imageView05"
+                android:background="@color/colorPrimary"
+                android:fontFamily="sans-serif-condensed"
+                android:paddingRight="6dp"
+                android:text="Movie 3"
+                android:textColor="@android:color/white"
+                android:textSize="24sp" />
+
+            <ImageView
+                android:id="@+id/imageView04"
+                android:layout_width="170dp"
+                android:layout_height="match_parent"
+                android:paddingEnd="6dp"
+                android:paddingRight="0dp"
+                app:srcCompat="@drawable/madlamzlogo"
+                android:layout_toRightOf="@+id/imageView06"
+                android:layout_toEndOf="@+id/imageView06"/>
+
+            <Button
+                android:id="@+id/button06"
+                style="@style/Widget.AppCompat.Button.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/imageView04"
+                android:layout_alignParentBottom="true"
+                android:layout_alignRight="@+id/imageView04"
+
+                android:layout_marginLeft="2dp"
+                android:layout_toEndOf="@+id/imageView06"
+                android:layout_toRightOf="@+id/imageView06"
+                android:background="@color/colorPrimary"
+                android:fontFamily="sans-serif-condensed"
+
+                android:text="Movie 4"
+                android:textColor="@android:color/white"
+                android:textSize="24sp" />
+
+        </RelativeLayout>
+
+    </HorizontalScrollView>
+    <TextView
+        android:id="@+id/series"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_below="@+id/horizontal_scroll2"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="sans-serif-condensed"
+        android:paddingLeft="2dp"
+        android:text="Series"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:textSize="30sp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <HorizontalScrollView
+        android:id="@+id/horizontal_scroll3"
+        android:layout_width="match_parent"
+        android:layout_height="139dp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_below="@+id/series"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:id="@+id/linear3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView13"
+                android:layout_width="170dp"
+                android:layout_height="match_parent"
+                android:paddingEnd="6dp"
+                android:paddingRight="0dp"
+                app:srcCompat="@drawable/madlamzlogo" />
+
+            <Button
+                android:id="@+id/button13"
+                style="@style/Widget.AppCompat.Button.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/imageView13"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignRight="@+id/imageView13"
+                android:layout_marginRight="2dp"
+                android:background="@color/colorPrimary"
+                android:fontFamily="sans-serif-condensed"
+                android:paddingRight="6dp"
+                android:text="Movie 1"
+                android:textColor="@android:color/white"
+                android:textSize="24sp" />
+
+            <ImageView
+                android:id="@+id/imageView15"
+                android:layout_width="170dp"
+                android:layout_height="match_parent"
+                android:paddingEnd="6dp"
+                android:paddingRight="0dp"
+                app:srcCompat="@drawable/madlamzlogo"
+                android:layout_toRightOf="@+id/imageView13"
+                android:layout_toEndOf="@+id/imageView13" />
+
+
+            <Button
+                android:id="@+id/button14"
+                style="@style/Widget.AppCompat.Button.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/imageView15"
+                android:layout_alignParentBottom="true"
+                android:layout_alignRight="@+id/imageView15"
+
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_toEndOf="@+id/imageView13"
+                android:layout_toRightOf="@+id/imageView13"
+                android:background="@color/colorPrimary"
+                android:fontFamily="sans-serif-condensed"
+                android:paddingRight="6dp"
+                android:text="Movie 2"
+                android:textColor="@android:color/white"
+                android:textSize="24sp" />
+
+            <ImageView
+                android:id="@+id/imageView16"
+                android:layout_width="170dp"
+                android:layout_height="match_parent"
+                android:paddingEnd="6dp"
+                android:paddingRight="0dp"
+                app:srcCompat="@drawable/madlamzlogo"
+                android:layout_toRightOf="@+id/imageView15"
+                android:layout_toEndOf="@+id/imageView15"/>
+
+
+            <Button
+                android:id="@+id/button15"
+                style="@style/Widget.AppCompat.Button.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/imageView16"
+                android:layout_alignParentBottom="true"
+                android:layout_alignRight="@+id/imageView16"
+
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_toEndOf="@+id/imageView15"
+                android:layout_toRightOf="@+id/imageView15"
+                android:background="@color/colorPrimary"
+                android:fontFamily="sans-serif-condensed"
+                android:paddingRight="6dp"
+                android:text="Movie 3"
+                android:textColor="@android:color/white"
+                android:textSize="24sp" />
+
+            <ImageView
+                android:id="@+id/imageView14"
+                android:layout_width="170dp"
+                android:layout_height="match_parent"
+                android:paddingEnd="6dp"
+                android:paddingRight="0dp"
+                app:srcCompat="@drawable/madlamzlogo"
+                android:layout_toRightOf="@+id/imageView16"
+                android:layout_toEndOf="@+id/imageView16"/>
+
+            <Button
+                android:id="@+id/button16"
+                style="@style/Widget.AppCompat.Button.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/imageView14"
+                android:layout_alignParentBottom="true"
+                android:layout_alignRight="@+id/imageView14"
+
+                android:layout_marginLeft="2dp"
+                android:layout_toEndOf="@+id/imageView16"
+                android:layout_toRightOf="@+id/imageView16"
+                android:background="@color/colorPrimary"
+                android:fontFamily="sans-serif-condensed"
+
+                android:text="Movie 4"
+                android:textColor="@android:color/white"
+                android:textSize="24sp" />
+
+        </RelativeLayout>
+
+    </HorizontalScrollView>
+
+    <TextView
+        android:id="@+id/animation"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_below="@+id/horizontal_scroll3"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="sans-serif-condensed"
+        android:paddingLeft="2dp"
+        android:text="Animations"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:textSize="30sp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <HorizontalScrollView
+        android:id="@+id/horizontal_scroll4"
+        android:layout_width="match_parent"
+        android:layout_height="139dp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_below="@+id/animation"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:id="@+id/linear4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView23"
+                android:layout_width="170dp"
+                android:layout_height="match_parent"
+                android:paddingEnd="6dp"
+                android:paddingRight="0dp"
+                app:srcCompat="@drawable/madlamzlogo" />
+
+            <Button
+                android:id="@+id/button23"
+                style="@style/Widget.AppCompat.Button.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/imageView23"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignRight="@+id/imageView23"
+                android:layout_marginRight="2dp"
+                android:background="@color/colorPrimary"
+                android:fontFamily="sans-serif-condensed"
+                android:paddingRight="6dp"
+                android:text="Movie 1"
+                android:textColor="@android:color/white"
+                android:textSize="24sp" />
+
+            <ImageView
+                android:id="@+id/imageView25"
+                android:layout_width="170dp"
+                android:layout_height="match_parent"
+                android:paddingEnd="6dp"
+                android:paddingRight="0dp"
+                app:srcCompat="@drawable/madlamzlogo"
+                android:layout_toRightOf="@+id/imageView23"
+                android:layout_toEndOf="@+id/imageView23" />
+
+
+            <Button
+                android:id="@+id/button24"
+                style="@style/Widget.AppCompat.Button.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/imageView25"
+                android:layout_alignParentBottom="true"
+                android:layout_alignRight="@+id/imageView25"
+
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_toEndOf="@+id/imageView23"
+                android:layout_toRightOf="@+id/imageView23"
+                android:background="@color/colorPrimary"
+                android:fontFamily="sans-serif-condensed"
+                android:paddingRight="6dp"
+                android:text="Movie 2"
+                android:textColor="@android:color/white"
+                android:textSize="24sp" />
+
+            <ImageView
+                android:id="@+id/imageView26"
+                android:layout_width="170dp"
+                android:layout_height="match_parent"
+                android:paddingEnd="6dp"
+                android:paddingRight="0dp"
+                app:srcCompat="@drawable/madlamzlogo"
+                android:layout_toRightOf="@+id/imageView25"
+                android:layout_toEndOf="@+id/imageView25"/>
+
+
+            <Button
+                android:id="@+id/button25"
+                style="@style/Widget.AppCompat.Button.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/imageView26"
+                android:layout_alignParentBottom="true"
+                android:layout_alignRight="@+id/imageView26"
+
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_toEndOf="@+id/imageView25"
+                android:layout_toRightOf="@+id/imageView25"
+                android:background="@color/colorPrimary"
+                android:fontFamily="sans-serif-condensed"
+                android:paddingRight="6dp"
+                android:text="Movie 3"
+                android:textColor="@android:color/white"
+                android:textSize="24sp" />
+
+            <ImageView
+                android:id="@+id/imageView24"
+                android:layout_width="170dp"
+                android:layout_height="match_parent"
+                android:paddingEnd="6dp"
+                android:paddingRight="0dp"
+                app:srcCompat="@drawable/madlamzlogo"
+                android:layout_toRightOf="@+id/imageView26"
+                android:layout_toEndOf="@+id/imageView26"/>
+
+            <Button
+                android:id="@+id/button26"
+                style="@style/Widget.AppCompat.Button.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/imageView24"
+                android:layout_alignParentBottom="true"
+                android:layout_alignRight="@+id/imageView24"
+
+                android:layout_marginLeft="2dp"
+                android:layout_toEndOf="@+id/imageView26"
+                android:layout_toRightOf="@+id/imageView26"
+                android:background="@color/colorPrimary"
+                android:fontFamily="sans-serif-condensed"
+
+                android:text="Movie 4"
+                android:textColor="@android:color/white"
+                android:textSize="24sp" />
+
+        </RelativeLayout>
+
+    </HorizontalScrollView>
+
+    <TextView
+        android:id="@+id/recommended"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_below="@+id/horizontal_scroll4"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="sans-serif-condensed"
+        android:paddingLeft="2dp"
+        android:text="Recommended For You"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:textSize="30sp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <HorizontalScrollView
+        android:id="@+id/horizontal_scroll5"
+        android:layout_width="match_parent"
+        android:layout_height="139dp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_below="@+id/recommended"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:id="@+id/linear5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView33"
+                android:layout_width="170dp"
+                android:layout_height="match_parent"
+                android:paddingEnd="6dp"
+                android:paddingRight="0dp"
+                app:srcCompat="@drawable/madlamzlogo" />
+
+            <Button
+                android:id="@+id/button33"
+                style="@style/Widget.AppCompat.Button.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/imageView33"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignRight="@+id/imageView33"
+                android:layout_marginRight="2dp"
+                android:background="@color/colorPrimary"
+                android:fontFamily="sans-serif-condensed"
+                android:paddingRight="6dp"
+                android:text="Movie 1"
+                android:textColor="@android:color/white"
+                android:textSize="24sp" />
+
+            <ImageView
+                android:id="@+id/imageView35"
+                android:layout_width="170dp"
+                android:layout_height="match_parent"
+                android:paddingEnd="6dp"
+                android:paddingRight="0dp"
+                app:srcCompat="@drawable/madlamzlogo"
+                android:layout_toRightOf="@+id/imageView33"
+                android:layout_toEndOf="@+id/imageView33" />
+
+
+            <Button
+                android:id="@+id/button34"
+                style="@style/Widget.AppCompat.Button.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/imageView35"
+                android:layout_alignParentBottom="true"
+                android:layout_alignRight="@+id/imageView35"
+
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_toEndOf="@+id/imageView33"
+                android:layout_toRightOf="@+id/imageView33"
+                android:background="@color/colorPrimary"
+                android:fontFamily="sans-serif-condensed"
+                android:paddingRight="6dp"
+                android:text="Movie 2"
+                android:textColor="@android:color/white"
+                android:textSize="24sp" />
+
+            <ImageView
+                android:id="@+id/imageView36"
+                android:layout_width="170dp"
+                android:layout_height="match_parent"
+                android:paddingEnd="6dp"
+                android:paddingRight="0dp"
+                app:srcCompat="@drawable/madlamzlogo"
+                android:layout_toRightOf="@+id/imageView35"
+                android:layout_toEndOf="@+id/imageView35"/>
+
+
+            <Button
+                android:id="@+id/button35"
+                style="@style/Widget.AppCompat.Button.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/imageView36"
+                android:layout_alignParentBottom="true"
+                android:layout_alignRight="@+id/imageView36"
+
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_toEndOf="@+id/imageView35"
+                android:layout_toRightOf="@+id/imageView35"
+                android:background="@color/colorPrimary"
+                android:fontFamily="sans-serif-condensed"
+                android:paddingRight="6dp"
+                android:text="Movie 3"
+                android:textColor="@android:color/white"
+                android:textSize="24sp" />
+
+            <ImageView
+                android:id="@+id/imageView34"
+                android:layout_width="170dp"
+                android:layout_height="match_parent"
+                android:paddingEnd="6dp"
+                android:paddingRight="0dp"
+                app:srcCompat="@drawable/madlamzlogo"
+                android:layout_toRightOf="@+id/imageView36"
+                android:layout_toEndOf="@+id/imageView36"/>
+
+            <Button
+                android:id="@+id/button36"
+                style="@style/Widget.AppCompat.Button.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/imageView34"
+                android:layout_alignParentBottom="true"
+                android:layout_alignRight="@+id/imageView34"
+
+                android:layout_marginLeft="2dp"
+                android:layout_toEndOf="@+id/imageView36"
+                android:layout_toRightOf="@+id/imageView36"
+                android:background="@color/colorPrimary"
+                android:fontFamily="sans-serif-condensed"
+
+                android:text="Movie 4"
+                android:textColor="@android:color/white"
+                android:textSize="24sp" />
+
+        </RelativeLayout>
+
+    </HorizontalScrollView>
 </RelativeLayout>
+</ScrollView>
