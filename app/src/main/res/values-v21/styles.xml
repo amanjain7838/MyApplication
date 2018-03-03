@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="madlamztheme" parent="android:Theme.DeviceDefault.Light.Dialog.NoActionBar">
+        <item name="android:colorPrimary">@color/primary_material_light</item>
+        <item name="android:colorPrimaryDark">@color/primary_dark_material_light</item>
+        <item name="android:colorBackground">@color/darkpurple</item>
+        <item name="android:statusBarColor">@color/darkpurple</item>
+        <item name="android:navigationBarColor">@color/darkpurple</item>
+        <item name="android:colorAccent">@color/accent_material_light</item>
+        <item name="android:textColorPrimaryInverse">@color/darkpurple</item>
+        <item name="android:textColorSecondaryInverse">@color/darkpurple</item>
+        <item name="android:textColorSecondary">@color/darkpurple</item>
+        <item name="android:textColorPrimary">@color/lightthemecolor</item>
+    </style>
+</resources>
